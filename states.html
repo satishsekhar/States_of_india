@@ -92,13 +92,9 @@
     }
 </script>
 </head>
-<body>
+<body onload="showIndianStateInfo();">
     <div class="container-fluid"> 
-        <div class="row" >
-            <div class="col-sm-12">
-                <button class="btn btn-primary" onclick="showIndianStateInfo();">Show Indian States Info</button>
-            </div>
-        </div>  
+
         <div id="indianStates" style="display: none;" >
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -106,16 +102,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 text-center">
-                    <p><u>State</u></p>
+                <div class="col-sm-6 text-center">
+                    <p class="bg-info text-dark"><u>State</u></p>
                     <h1 id="StateName" style="color: blue;">State Name</h1>
                 </div>
+                <!--
                 <div class="col-sm-4 text-center">
-                    <p><br/></p>
+                    <p class="bg-info text-dark"><br/></p>
                     <h1>▬</h1>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <p><u>Capital</u></p>
+                </div>  -->
+                <div class="col-sm-6 text-center">
+                    <p class="bg-info text-dark"><u>Capital</u></p>
                     <h1 id="StateCapital" style="color: blue;">Capital Name</h1>
                 </div>
             </div>    
@@ -124,11 +121,14 @@
 
 
             <div class="row">
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-3 text-center">
                     <h5 id="Politcial">Politcial Map</h5>
                 </div>
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-3 text-center">
                     <h5 id="Physical">Physical Map</h5>
+                </div>
+                <div class="col-sm-6">
+                    <h4></h4>
                 </div>
             </div>
 
